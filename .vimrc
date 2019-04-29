@@ -131,7 +131,7 @@ call plug#begin('~/.vim/plugged')
   endif
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
-  " Plug 'sheerun/vim-polyglot'
+  Plug 'sheerun/vim-polyglot'
 
   " markdown
   Plug 'iamcco/mathjax-support-for-mkdp', { 'for': 'markdown' }
@@ -175,6 +175,7 @@ noremap <silent><C-j> :bdelete<CR>
 
 " indentLine
 let g:indentLine_color_term = 239
+let g:indentLine_setConceal = 0
 
 " nerdcommenter
 let g:NERDSpaceDelims = 1
