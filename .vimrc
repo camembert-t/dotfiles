@@ -40,8 +40,11 @@ set smartindent
 " タブをスペースに置換
 set expandtab
 " インデント幅
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+" タブを可視化
+" set list listchars=tab:\▸\-
+
 
 "* search *
 " 大文字のみ区別する
@@ -65,9 +68,6 @@ set cursorline
 set laststatus=2
 " コマンドをステータスに表示
 set showcmd
-" タブを可視化
-" set list listchars=tab:\▸\-
-
 
 
 " *** keybind ***
