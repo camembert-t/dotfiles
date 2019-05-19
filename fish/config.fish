@@ -50,10 +50,11 @@ if test (string length (type 'nvim' ^/dev/null)) -gt 0 ^/dev/null
 end
 
 # pyenv
-# if test (string length (type 'pyenv' ^/dev/null)) -gt 0 ^/dev/null
-    # set -x PYENV_ROOT "$HOME/.pyenv"
-    # set -x PATH "$PYENV_ROOT/bin" $PATH
-# end
+if test -d $HOME/.pyenv
+    set -x PYENV_ROOT "$HOME/.pyenv"
+    set -x PATH "$PYENV_ROOT/bin" $PATH 
+    status --is-interactive; and source (pyenv init -|psub); and source (pyenv virtualenv-init -|psub)
+end
 
 # direnv
 if test (string length (type 'direnv' ^/dev/null)) -gt 0 ^/dev/null
