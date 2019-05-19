@@ -1,6 +1,7 @@
 "*** setting ***"
 "* pass *
 let g:python3_host_prog = substitute(system('which python3'),"\n","","")
+"let g:python3_host_prog = expand('~/.pyenv/versions/3.6.4/envs/develop/bin/python')
 
 "* setting *
 " エンコード
@@ -185,6 +186,8 @@ noremap <silent><C-u> :UndotreeToggle<CR>
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+inoremap <silent><expr><C-j> pumvisible() ? "\<C-n>" : "\<C-x>\<C-o>"
+inoremap <silent><expr><C-k> pumvisible() ? "\<C-p>" : "\<C-x>\<C-o>"
 
 " ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
