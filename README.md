@@ -2,10 +2,8 @@
 Installation guide for Ubuntu
 
 ```sh
-$ cd ~
-$ mkdir .myconfig
-$ cd .myconfig
-$ git clone https://github.com/camembert-t/dotfiles.git
+$ mkdir ~/.myconfig
+$ git clone https://github.com/camembert-t/dotfiles.git ~/.myconfig
 ```
 
 
@@ -33,14 +31,31 @@ $ sudo apt-get install neovim
 $ ln -s ~/.myconfig/dotfiles/.vimrc ~/.config/nvim/init.vim
 ```
 
-#### prerequisites for the python modules
+#### prerequistes for the python modules
 
-```sh
+```sh   
 $ sudo apt-get install python-dev python-pip python3-dev python3-pip
 $ pip3 install neovim
 ```
 
 - https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+
+### pyenv
+
+```sh
+$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+$ mkdir ~/.pyenv
+$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+$ git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv 
+---
+$ pyenv install [version]
+$ pyenv virtualenv [version] [version_name]
+$ pyenv global [version_name]
+$ sudo localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
+```
 
 
 ## misc
