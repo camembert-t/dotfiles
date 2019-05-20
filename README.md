@@ -2,7 +2,8 @@
 Installation guide for Ubuntu
 
 ```sh
-$ mkdir ~/.myconfig
+$ mkdir ~/.myconfig 
+$ mkdir ~/.myconfig/dotfiles
 $ git clone https://github.com/camembert-t/dotfiles.git ~/.myconfig
 ```
 
