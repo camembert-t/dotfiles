@@ -1,7 +1,7 @@
 "*** setting ***"
 "* pass *
-let g:python3_host_prog = substitute(system('which python3'),"\n","","")
-"let g:python3_host_prog = expand('~/.pyenv/versions/3.6.4/envs/develop/bin/python')
+"let g:python3_host_prog = substitute(system('which python3'),"\n","","")
+let g:python3_host_prog = expand('~/.pyenv/versions/3.6.5/envs/develop/bin/python')
 
 "* setting *
 " エンコード
@@ -44,7 +44,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 " タブを可視化
-" set list listchars=tab:\▸\-
+set list listchars=tab:\▸\-
 
 
 "* search *
@@ -114,7 +114,7 @@ call plug#begin('~/.vim/plugged')
   " tool
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
-  Plug 'w0rp/ale'
+  " Plug 'w0rp/ale'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'Yggdroot/indentLine'
@@ -139,7 +139,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'iamcco/markdown-preview.vim', { 'for': 'markdown' }
 
   " tex
-  "Plug 'lervag/vimtex'
+  " Plug 'lervag/vimtex'
     
   " theme
   Plug 'jonathanfilip/vim-lucius'
