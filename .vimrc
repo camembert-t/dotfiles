@@ -46,6 +46,11 @@ set shiftwidth=2
 " タブを可視化
 set list listchars=tab:\▸\-
 
+" カーソル位置を記憶
+if has("autocmd")
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
+
 
 "* search *
 " 大文字のみ区別する
