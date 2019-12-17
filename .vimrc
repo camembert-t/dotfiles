@@ -1,6 +1,6 @@
 "*** setting ***"
 "* pass *
-"let g:python3_host_prog = substitute(system('which python3'),"\n","","")
+" let g:python3_host_prog = substitute(system('which python3'),"\n","","")
 let g:python3_host_prog = expand('~/.pyenv/versions/3.6.5/envs/develop/bin/python')
 
 "* setting *

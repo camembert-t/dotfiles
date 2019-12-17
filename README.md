@@ -1,6 +1,8 @@
 # dotfiles
 Installation guide for Ubuntu
 
+- *setup_environment.sh* を使うと楽だが, ちゃんと動くわけではない
+
 ```sh
 $ mkdir ~/.myconfig 
 $ mkdir ~/.myconfig/dotfiles
