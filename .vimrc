@@ -125,7 +125,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'scrooloose/nerdcommenter'
   Plug 'cohama/lexima.vim'
-  Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
+  Plug 'mbbill/undotree'
+  " Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   if has('nvim')
@@ -138,6 +139,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
   Plug 'sheerun/vim-polyglot'
+
+  " git
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
 
   " markdown
   Plug 'iamcco/mathjax-support-for-mkdp', { 'for': 'markdown' }
@@ -206,3 +211,7 @@ let g:vim_markdown_conceal = 0
 " vim-lucius
 set background=dark
 colorscheme lucius
+
+" gitgutter
+nmap ]d <Plug>(GitGutterNextHunk)
+nmap [d <Plug>(GitGutterPrevHunk)
