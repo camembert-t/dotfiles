@@ -1,7 +1,7 @@
 "*** setting ***"
 "* pass *
 " let g:python3_host_prog = substitute(system('which python3'),"\n","","")
-let g:python3_host_prog = expand('~/.pyenv/versions/3.6.5/envs/develop/bin/python')
+let g:python3_host_prog = expand('~/.pyenv/versions/3.9.1/envs/env/bin/python')
 
 "* setting *
 " エンコード

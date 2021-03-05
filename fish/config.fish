@@ -5,6 +5,7 @@ set -x LC_ALL ja_JP.UTF-8
 set -x TERM xterm-256color
 set -x EDITOR vim
 set -x XDG_CONFIG_HOME ~/.config
+set -x PATH $PATH /opt/homebrew/bin
 
 # vi mode
 function fish_mode_prompt

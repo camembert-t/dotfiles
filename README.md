@@ -1,6 +1,7 @@
 # dotfiles
-Installation guide for Ubuntu
 
+
+## Ubuntu
 - *setup_environment.sh* を使うと楽だが, ちゃんと動くわけではない
 
 ```sh
@@ -10,7 +11,7 @@ $ git clone https://github.com/camembert-t/dotfiles.git ~/.myconfig
 ```
 
 
-## fish
+### fish
 
 ```sh
 $ sudo apt-add-repository ppa:fish-shell/release-3
@@ -24,7 +25,7 @@ $ ln -s ~/.myconfig/dotfiles/fish/fish_prompt.fish ~/.config/fish/functions/fish
 - https://github.com/fish-shell/fish-shell
 
 
-## neovim
+### neovim
 
 ```sh
 $ sudo apt-get install software-properties-common
@@ -34,7 +35,7 @@ $ sudo apt-get install neovim
 $ ln -s ~/.myconfig/dotfiles/.vimrc ~/.config/nvim/init.vim
 ```
 
-#### prerequistes for the python modules
+##### prerequistes for the python modules
 
 ```sh   
 $ sudo apt-get install python-dev python-pip python3-dev python3-pip
@@ -44,7 +45,7 @@ $ pip3 install neovim
 - https://github.com/neovim/neovim/wiki/Installing-Neovim
 
 
-### pyenv
+##### pyenv
 
 ```sh
 $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
@@ -61,26 +62,73 @@ $ sudo localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
 ```
 
 
-## misc
+### misc
 
-#### tmux
+##### tmux
 
 ```sh
 $ sudo apt-get install tmux
 $ ln -s ~/.myconfig/dotfiles/.tmux.conf ~/.tmux.conf
 ```
 
-#### ctags
+##### ctags
 
 ```sh
 $ sudo apt-get install exuberant-ctags
 ```
 
-#### ag
+##### ag
 
 ```sh
 $ sudo apt-get install silversearcher-ag
 ```
 
-#### direnv
 
+
+## Mac (M1)
+
+### Terminal
+- iTerm2
+  - https://iterm2.com/
+- color scheme
+  - http://color.smyck.org/
+- font
+  - https://github.com/sanemat/homebrew-font
+  - https://github.com/edihbrandon/RictyDiminished
+
+### Install
+- homebrew
+  - https://brew.sh/index_ja
+
+- fish
+  - https://fishshell.com/
+
+```
+$ brew install fish
+$ which fish
+$ sudo vim /etc/shells
+  + path for fish
+$ chsh -s (path for fish)
+```
+
+- neovim
+```
+$ brew install neovim
+```
+
+- pyenv
+  - https://github.com/pyenv/pyenv
+```
+$ brew install pyenv
+$ brew install pyenv-virtualenv
+```
+
+- tools
+```
+ctags
+$ brew install ctags
+ag
+$ brew install the_silver_searcher
+fzf
+$ brew install fzf
+```
